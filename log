@@ -37,3 +37,20 @@ Fri 23 Sep 2022 08:50:37 PM UTC:
  tests:  4|7
 total_score: 5/70
 95499ac
+Fri 23 Sep 2022 09:15:30 PM UTC: 
+ treemap.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:78:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   78 |       if (is_equal(tree,key,aux->pair->key)==1)
+      |       ^~
+treemap.c:80:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   80 |         tree->current=aux->pair->data;
+      |         ^~~~
+treemap.c:80:32: error: ‘Pair’ has no member named ‘data’
+   80 |         tree->current=aux->pair->data;
+      |                                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+6f10bb3
