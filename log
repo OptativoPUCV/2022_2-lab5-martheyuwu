@@ -54,3 +54,13 @@ treemap.c:80:32: error: ‘Pair’ has no member named ‘data’
 cc1: all warnings being treated as errors
 Compilation failed
 6f10bb3
+Fri 23 Sep 2022 09:15:43 PM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:80:32: error: ‘Pair’ has no member named ‘data’
+   80 |         tree->current=aux->pair->data;
+      |                                ^~
+Compilation failed
+5ffafb2
