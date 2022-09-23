@@ -84,11 +84,9 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       }
       int result=tree->lower_than(key,aux->pair->key);
       if (result==1){
-        TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
         aux=tree->root->left;
       }
       else{
-        TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
         aux=tree->root->right;
       }
       tree->root=aux;
