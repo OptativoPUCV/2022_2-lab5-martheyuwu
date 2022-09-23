@@ -83,10 +83,14 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
         return aux->pair;
       }
       int result=tree->lower_than(key,aux->pair->key);
-      if (result==1)
+      if (result==1){
+        TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
         aux=tree->root->left;
-      else
+      }
+      else{
+        TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
         aux=tree->root->right;
+      }
       tree->root=aux;
     }
 }
