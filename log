@@ -64,3 +64,20 @@ treemap.c:80:32: error: ‘Pair’ has no member named ‘data’
       |                                ^~
 Compilation failed
 5ffafb2
+Fri 23 Sep 2022 09:23:35 PM UTC: 
+ treemap.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:82:7: error: ‘result’ undeclared (first use in this function)
+   82 |       result=tree->lower_than(key,aux->pair->key);
+      |       ^~~~~~
+treemap.c:82:7: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:84:17: error: ‘TreeMap’ has no member named ‘left’
+   84 |         aux=tree->left;
+      |                 ^~
+treemap.c:86:17: error: ‘TreeMap’ has no member named ‘right’
+   86 |         aux=tree->right;
+      |                 ^~
+Compilation failed
+be7d8a8
