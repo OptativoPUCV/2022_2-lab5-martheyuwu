@@ -94,3 +94,8 @@ treemap.c:86:17: error: ‘TreeMap’ has no member named ‘right’
       |                 ^~
 Compilation failed
 653cb4d
+Fri 23 Sep 2022 09:35:57 PM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+b90e6ca
