@@ -457,3 +457,25 @@ Sat 24 Sep 2022 07:02:00 PM UTC:
  tests:  15|4
 total_score: 25/70
 a279407
+Sat 24 Sep 2022 07:24:35 PM UTC: 
+ treemap.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:100:20: error: passing argument 1 of ‘removeNode’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  100 |         removeNode(minimo);
+      |                    ^~~~~~
+      |                    |
+      |                    TreeNode *
+treemap.c:88:27: note: expected ‘TreeMap *’ but argument is of type ‘TreeNode *’
+   88 | void removeNode(TreeMap * tree, TreeNode* node) {
+      |                 ~~~~~~~~~~^~~~
+treemap.c:100:9: error: too few arguments to function ‘removeNode’
+  100 |         removeNode(minimo);
+      |         ^~~~~~~~~~
+treemap.c:88:6: note: declared here
+   88 | void removeNode(TreeMap * tree, TreeNode* node) {
+      |      ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+337ccc7
