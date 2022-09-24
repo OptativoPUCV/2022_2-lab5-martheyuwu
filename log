@@ -491,3 +491,20 @@ Sat 24 Sep 2022 07:42:58 PM UTC:
  tests:  15|4
 total_score: 25/70
 7123b9b
+Sat 24 Sep 2022 07:53:30 PM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:89:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   89 |     if (node->left==NULL && node->right==NULL)
+      |     ^~
+treemap.c:91:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   91 |       node->parent->right=NULL;
+      |       ^~~~
+treemap.c:92:5: error: ‘else’ without a previous ‘if’
+   92 |     else{
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1d23783
