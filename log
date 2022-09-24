@@ -374,3 +374,15 @@ Sat 24 Sep 2022 04:49:42 AM UTC:
  tests:  11|6
 total_score: 15/70
 e695a1d
+Sat 24 Sep 2022 04:54:24 AM UTC: 
+ treemap.c | 18 ++++++++++++++----
+ 1 file changed, 14 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:59:23: error: ‘node’ undeclared (first use in this function); did you mean ‘nodo’?
+   59 |             aux->left=node;
+      |                       ^~~~
+      |                       nodo
+treemap.c:59:23: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+61f228c
