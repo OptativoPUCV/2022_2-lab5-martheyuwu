@@ -92,9 +92,9 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     else{
       if (node->left!=NULL && node->right==NULL)
-        node->parent->left=node->parent;
+        node->parent->left=node->left;
       if (node->left==NULL && node->right!=NULL)
-        node->parent->right=node->parent;
+        node->parent->right=node->right;
       if (node->left!=NULL && node->right!=NULL){
         TreeNode *minimo=(TreeNode *)malloc(sizeof(TreeNode));
         minimo=minimum(node->right);
