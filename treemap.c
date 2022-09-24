@@ -97,7 +97,8 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         TreeNode *minimo=(TreeNode *)malloc(sizeof(TreeNode));
         minimo=minimum(node->right);
         node->pair=minimo->pair;
-        removeNode(minimo);
+        if (minimo!=NULL)
+          removeNode(tree,minimo);
       }        
     }
 }
