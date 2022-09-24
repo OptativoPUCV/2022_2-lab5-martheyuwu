@@ -386,3 +386,9 @@ treemap.c:59:23: error: ‘node’ undeclared (first use in this function); did 
 treemap.c:59:23: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 61f228c
+Sat 24 Sep 2022 04:54:31 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|6
+total_score: 15/70
+92ac79b
