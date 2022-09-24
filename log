@@ -319,3 +319,17 @@ treemap.c:50:28: error: expected ‘;’ before ‘}’ token
       | ~                           
 Compilation failed
 50a9be7
+Sat 24 Sep 2022 03:47:25 AM UTC: 
+ treemap.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:14: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   51 |       return 0;
+      |              ^
+treemap.c:49:6: note: declared here
+   49 | void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      |      ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d5e0e67
