@@ -169,7 +169,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    TreeNode *aux==(TreeNode *)malloc(sizeof(TreeNode));
+    TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
     int resultado;
     aux=tree->current;
     if (tree->current->right!=NULL){

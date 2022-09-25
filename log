@@ -773,3 +773,14 @@ treemap.c:181:19: error: ‘map’ undeclared (first use in this function)
       |                   ^~~
 Compilation failed
 7f6e6ce
+Sun 25 Sep 2022 09:30:31 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:181:19: error: ‘map’ undeclared (first use in this function)
+  181 |         resultado=map->lower_than(aux,aux->parent);
+      |                   ^~~
+treemap.c:181:19: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4cba5b5
