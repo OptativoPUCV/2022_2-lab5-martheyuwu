@@ -173,8 +173,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     int resultado;
     aux=tree->current;
     if (tree->current->right!=NULL){
-      tree->current=aux->right->left;
-      return tree->current->pair;
+      return tree->current->right->pair;
     }
     else{
       while (1){
