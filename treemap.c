@@ -170,7 +170,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
         menor=key;
       search=nextTreeMap(tree);
     }
-    return menor;
+    search=searchTreeMap(tree,menor);
+    return search;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
