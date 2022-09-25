@@ -164,8 +164,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
       return search;
     aux=firstTreeMap(tree);
     while (search!=NULL){
-      result=tree->lower_than(key,aux->pair->key);
-      paramenor=tree->lower_than(menor,aux->pair->key);
+      result=tree->lower_than(key,aux->key);
+      paramenor=tree->lower_than(menor,aux->key);
       if (result==1 && paramenor==0)
         menor=key;
       search=nextTreeMap(tree);
