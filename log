@@ -901,3 +901,14 @@ treemap.c:162:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 68de18a
+Sun 25 Sep 2022 11:20:03 PM UTC: 
+ treemap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:158:11: error: unused variable ‘menor’ [-Werror=unused-variable]
+  158 |     void *menor;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+011ff21
