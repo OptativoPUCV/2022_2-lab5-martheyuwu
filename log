@@ -749,3 +749,9 @@ treemap.c:167:14: error: request for member ‘left’ in something not a struct
 cc1: all warnings being treated as errors
 Compilation failed
 a070633
+Sun 25 Sep 2022 03:53:37 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  20|2
+total_score: 45/70
+ba67fb6
