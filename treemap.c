@@ -113,13 +113,13 @@ void removeNode(TreeMap * tree, TreeNode* node) {
           node->parent->right->parent=node->parent->right;
         }
       }
-      if (node->left!=NULL && node->right!=NULL){
+    /*  if (node->left!=NULL && node->right!=NULL){
         TreeNode *minimo=(TreeNode *)malloc(sizeof(TreeNode));
         minimo=minimum(node->right);
         node->pair=minimo->pair;
         if (minimo!=NULL)
           removeNode(tree,minimo);
-      }        
+      }   */     
     }
 }
 
