@@ -98,16 +98,20 @@ void removeNode(TreeMap * tree, TreeNode* node) {
           node->parent->left=node->left;
           node->left->parent=node->parent->left;
         }
-        else{
+        if (node==node->parent->right){
           node->parent->right=node->left;
-          node->right->parent=node->parent->left;
+          node->left->parent=node->parent->left;
         }
       }
       if (node->left==NULL && node->right!=NULL){
-        if (node==node->parent->left)
+        if (node==node->parent->left){
           node->parent->left=node->right;
-        if (node==node->parent->right)
+          node->right->parent=node->parent->left;
+        }
+        if (node==node->parent->right){
           node->parent->right=node->right;
+          node->right->parent=node->parent->left;
+        }
       }
       if (node->left!=NULL && node->right!=NULL){
         TreeNode *minimo=(TreeNode *)malloc(sizeof(TreeNode));
