@@ -93,25 +93,25 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         node->parent->right=NULL;
     }
     else{
-      //if (node->left!=NULL && node->right==NULL){
-       // if (node==node->parent->left){
-       //   node->parent->left=node->left;
-      //  }
-      //  if (node==node->parent->right){
-       //   node->parent->right=node->left;
-        //  node->parent->right->parent=node->parent->right;
-       // }
-     // }
-      if (node->left==NULL && node->right!=NULL){
+      if (node->left!=NULL && node->right==NULL){
         if (node==node->parent->left){
-          node->parent->left=node->right;
-          free(node);
+          node->parent->left=node->left;
         }
         if (node==node->parent->right){
-          node->parent->right=node->right;
+          node->parent->right=node->left;
           node->parent->right->parent=node->parent->right;
         }
       }
+      //if (node->left==NULL && node->right!=NULL){
+       // if (node==node->parent->left){
+       //   node->parent->left=node->right;
+       //   free(node);
+       // }
+       // if (node==node->parent->right){
+        //  node->parent->right=node->right;
+        //  node->parent->right->parent=node->parent->right;
+       // }
+     // }
     /*  if (node->left!=NULL && node->right!=NULL){
         TreeNode *minimo=(TreeNode *)malloc(sizeof(TreeNode));
         minimo=minimum(node->right);
