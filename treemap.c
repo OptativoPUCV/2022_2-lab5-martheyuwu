@@ -169,5 +169,21 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    return NULL;
+    TreeNode *aux==(TreeNode *)malloc(sizeof(TreeNode));
+    int resultado;
+    aux=tree->current;
+    if (tree->current->right!=NULL){
+      tree->current=aux->right->left;
+      return tree->current->pair;
+    }
+    else{
+      while (1){
+        resultado=map->lower_than(aux,aux->parent);
+        if (resultado==1){
+          tree->current=aux->parent;
+          return aux->parent->pair;
+        }
+        aux=aux->parent;
+      }
+    }
 }
