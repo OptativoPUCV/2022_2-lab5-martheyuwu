@@ -159,7 +159,13 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return tree->root->left->pair;
+    TreenNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
+    aux=tree->root;
+    while (1){
+      if (aux->left==NULL)
+        return aux;
+      aux=aux->left;
+    }
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
