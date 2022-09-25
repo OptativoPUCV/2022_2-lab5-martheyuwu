@@ -159,7 +159,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return tree->root->pair;
+    return tree->root->left->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
