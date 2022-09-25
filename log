@@ -912,3 +912,14 @@ treemap.c:158:11: error: unused variable ‘menor’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 011ff21
+Sun 25 Sep 2022 11:20:17 PM UTC: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:158:11: error: variable ‘menor’ set but not used [-Werror=unused-but-set-variable]
+  158 |     void *menor;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2c44bbb

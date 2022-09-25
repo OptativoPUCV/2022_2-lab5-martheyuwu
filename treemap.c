@@ -161,6 +161,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     if (search!=NULL)
       return search->key;
     while (1){
+      menor=key;
     }
 }
 
