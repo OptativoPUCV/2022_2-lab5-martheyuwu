@@ -163,7 +163,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     aux=tree->root;
     while (1){
       if (aux->left==NULL)
-        return aux;
+        return aux->pair;
       aux=aux->left;
     }
 }
