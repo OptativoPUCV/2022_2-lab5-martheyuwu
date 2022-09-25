@@ -161,7 +161,6 @@ Pair * upperBound(TreeMap * tree, void* key) {
     search=searchTreeMap(tree,key);
     if (search!=NULL)
       return search;
-    Pair *search=(Pair *)malloc(sizeof(Pair));
     aux=firstTreeMap(tree);
     while (search!=NULL){
       result=tree->lower_than(key,aux->pair->key);
