@@ -158,6 +158,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     void *menor=key;
     int result,paramenor;
     Pair *search=(Pair *)malloc(sizeof(Pair));
+    Pair *aux=(Pair *)malloc(sizeof(Pair));
     search=searchTreeMap(tree,key);
     if (search!=NULL)
       return search;
