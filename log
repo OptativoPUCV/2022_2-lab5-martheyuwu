@@ -1529,3 +1529,14 @@ treemap.c:160:11: error: variable ‘menorpair’ set but not used [-Werror=unus
 cc1: all warnings being treated as errors
 Compilation failed
 206f794
+Mon 26 Sep 2022 02:27:51 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:160:11: error: variable ‘menorpair’ set but not used [-Werror=unused-but-set-variable]
+  160 |     Pair *menorpair=(Pair *)malloc(sizeof(Pair));
+      |           ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6da6d3e
