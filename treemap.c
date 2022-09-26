@@ -173,13 +173,13 @@ Pair * upperBound(TreeMap * tree, void* key) {
       if (paramenor==1 && menorkey==1 && result==1){
         menor=aux->pair->key;
         menorpair=aux->pair;
+        return NULL;
       }
       if (result==1)
         aux=aux->left;
       else
         aux=aux->right;
     }
-    return menorpair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
