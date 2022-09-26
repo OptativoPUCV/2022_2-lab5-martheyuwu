@@ -164,7 +164,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
     aux=tree->root;
     void *menor=aux->pair->key;
-    while (1){
+    /*while (1){
       if (aux==NULL)
         break;
       result=tree->lower_than(key,aux->pair->key);
@@ -181,7 +181,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
         aux=aux->right;
     }
     if (probar==0)
-      return tree->root->pair;
+      return tree->root->pair;*/
     return menorpair;
 }
 

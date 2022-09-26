@@ -1319,3 +1319,26 @@ Mon 26 Sep 2022 02:13:15 AM UTC:
  tests:  26|1
 total_score: 60/70
 5cd86a0
+Mon 26 Sep 2022 02:13:33 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:166:11: error: unused variable ‘menor’ [-Werror=unused-variable]
+  166 |     void *menor=aux->pair->key;
+      |           ^~~~~
+treemap.c:158:35: error: unused variable ‘probar’ [-Werror=unused-variable]
+  158 |     int result,paramenor,menorkey,probar=0;
+      |                                   ^~~~~~
+treemap.c:158:26: error: unused variable ‘menorkey’ [-Werror=unused-variable]
+  158 |     int result,paramenor,menorkey,probar=0;
+      |                          ^~~~~~~~
+treemap.c:158:16: error: unused variable ‘paramenor’ [-Werror=unused-variable]
+  158 |     int result,paramenor,menorkey,probar=0;
+      |                ^~~~~~~~~
+treemap.c:158:9: error: unused variable ‘result’ [-Werror=unused-variable]
+  158 |     int result,paramenor,menorkey,probar=0;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1e15775
