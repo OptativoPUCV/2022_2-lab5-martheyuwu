@@ -1738,3 +1738,9 @@ treemap.c:186:9: error: suggest parentheses around assignment used as truth valu
 cc1: all warnings being treated as errors
 Compilation failed
 fd775d2
+Mon 26 Sep 2022 03:12:50 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  29|0
+total_score: 70/70
+52bc758
