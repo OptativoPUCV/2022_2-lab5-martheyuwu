@@ -171,6 +171,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
       aux=nextTreeMap(tree);
     }
     search=searchTreeMap(tree,menor);
+    return search;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
