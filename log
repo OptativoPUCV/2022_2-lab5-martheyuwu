@@ -1063,3 +1063,14 @@ Mon 26 Sep 2022 12:11:54 AM UTC:
  tests:  26|1
 total_score: 60/70
 59022db
+Mon 26 Sep 2022 12:12:50 AM UTC: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:175:1: error: control reaches end of non-void function [-Werror=return-type]
+  175 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+11293c7
