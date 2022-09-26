@@ -1298,3 +1298,18 @@ treemap.c:182:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 74bd333
+Mon 26 Sep 2022 02:13:10 AM UTC: 
+ treemap.c | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:175:9: error: ‘menorpair’ undeclared (first use in this function)
+  175 |         menorpair=aux->pair;
+      |         ^~~~~~~~~
+treemap.c:175:9: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:186:1: error: control reaches end of non-void function [-Werror=return-type]
+  186 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e4074cb
