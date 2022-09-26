@@ -182,7 +182,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     }
     if (probar==0)
       return tree->root->pair;
-    //return menorpair;
+    return menorpair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
