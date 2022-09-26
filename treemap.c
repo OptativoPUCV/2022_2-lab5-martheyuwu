@@ -168,8 +168,9 @@ Pair * upperBound(TreeMap * tree, void* key) {
       if (aux==NULL)
         break;
       result=tree->lower_than(key,aux->pair->key);
+      paramenor=tree->lower_than(aux->pair->key,menor);
       menorkey=tree->lower_than(key,menor);
-      if (menorkey==1 && result==1){
+      if (paramenor==1 && menorkey==1 && result==1){
         menor=aux->pair->key;
         menorpair=aux->pair;
         probar=1;
