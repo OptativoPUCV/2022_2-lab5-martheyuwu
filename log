@@ -1138,3 +1138,8 @@ treemap.c:161:11: error: variable ‘menorpair’ set but not used [-Werror=unus
 cc1: all warnings being treated as errors
 Compilation failed
 d93dfae
+Mon 26 Sep 2022 01:19:04 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+8ff51b5
