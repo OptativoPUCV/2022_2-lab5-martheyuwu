@@ -1540,3 +1540,14 @@ treemap.c:160:11: error: variable ‘menorpair’ set but not used [-Werror=unus
 cc1: all warnings being treated as errors
 Compilation failed
 6da6d3e
+Mon 26 Sep 2022 02:28:21 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:175:9: error: ‘menorpair’ undeclared (first use in this function)
+  175 |         menorpair=aux->pair;
+      |         ^~~~~~~~~
+treemap.c:175:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4ea9291
