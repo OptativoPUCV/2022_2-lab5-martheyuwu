@@ -183,6 +183,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
       else
         aux=aux->right;
     }
+    if (auxint=0)
+      return NULL;
     return menorpair;
 }
 

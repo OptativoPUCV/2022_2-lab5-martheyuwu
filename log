@@ -1727,3 +1727,14 @@ Mon 26 Sep 2022 03:10:17 AM UTC:
  tests:  28|1
 total_score: 65/70
 58568cf
+Mon 26 Sep 2022 03:12:42 AM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:186:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  186 |     if (auxint=0)
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fd775d2
