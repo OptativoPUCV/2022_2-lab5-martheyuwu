@@ -1074,3 +1074,20 @@ treemap.c:175:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 11293c7
+Mon 26 Sep 2022 12:39:14 AM UTC: 
+ treemap.c | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:159:16: error: unused variable ‘paramenor’ [-Werror=unused-variable]
+  159 |     int result,paramenor;
+      |                ^~~~~~~~~
+treemap.c:158:11: error: unused variable ‘menor’ [-Werror=unused-variable]
+  158 |     void *menor=key;
+      |           ^~~~~
+treemap.c:175:1: error: control reaches end of non-void function [-Werror=return-type]
+  175 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+05363c5
