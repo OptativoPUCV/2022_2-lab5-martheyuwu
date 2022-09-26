@@ -1659,3 +1659,28 @@ treemap.c:172:36: error: ‘menorfuncion’ may be used uninitialized in this fu
 cc1: all warnings being treated as errors
 Compilation failed
 1b9528f
+Mon 26 Sep 2022 03:01:40 AM UTC: 
+ treemap.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:165:15: error: conflicting types for ‘aux’
+  165 |     TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
+      |               ^~~
+treemap.c:158:16: note: previous definition of ‘aux’ was here
+  158 |     int result,aux=0;
+      |                ^~~
+treemap.c:171:7: error: ‘menorkey’ undeclared (first use in this function); did you mean ‘menor’?
+  171 |       menorkey=lower_than(aux->pair->key,menor);
+      |       ^~~~~~~~
+      |       menor
+treemap.c:171:7: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:171:16: error: implicit declaration of function ‘lower_than’ [-Werror=implicit-function-declaration]
+  171 |       menorkey=lower_than(aux->pair->key,menor);
+      |                ^~~~~~~~~~
+treemap.c:174:12: error: assignment to ‘TreeNode *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  174 |         aux=1;
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+adfeaf2
