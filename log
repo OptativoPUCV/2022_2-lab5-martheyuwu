@@ -1018,3 +1018,9 @@ treemap.c:138:44: note: expected ‘void *’ but argument is of type ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 3aea201
+Mon 26 Sep 2022 12:03:28 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  26|1
+total_score: 60/70
+66290e3
