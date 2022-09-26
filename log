@@ -1645,3 +1645,17 @@ treemap.c:166:11: error: variable ‘menor’ set but not used [-Werror=unused-b
 cc1: all warnings being treated as errors
 Compilation failed
 1e98cae
+Mon 26 Sep 2022 02:49:42 AM UTC: 
+ treemap.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:171:16: error: implicit declaration of function ‘lower_than’ [-Werror=implicit-function-declaration]
+  171 |       menorkey=lower_than(key,menor);
+      |                ^~~~~~~~~~
+treemap.c:172:36: error: ‘menorfuncion’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  172 |       if (result==1 && menorkey==1 && menorfuncion){
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1b9528f
