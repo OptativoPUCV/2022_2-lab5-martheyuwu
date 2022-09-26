@@ -179,10 +179,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
         aux=aux->left;
       else
         aux=aux->right;
-    }
+    }*/
     if (probar==0)
-      return tree->root->pair;*/
-    return menorpair;
+      return tree->root->pair;
+   // return menorpair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
