@@ -162,7 +162,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     if (search!=NULL)
       return search;
     //TreeNode *aux=(TreeNode *)malloc(sizeof(TreeNode));
-    aux=tree->root;
+   // aux=tree->root;
    // void *menor=aux->pair->key;
     /*while (1){
       if (aux==NULL)
