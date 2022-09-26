@@ -155,7 +155,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-    int result,aux=0;
+    int result,auxint=0;
     void *menor=NULL;
     Pair *search=(Pair *)malloc(sizeof(Pair));
     Pair *menorpair=(Pair *)malloc(sizeof(Pair));
@@ -169,9 +169,9 @@ Pair * upperBound(TreeMap * tree, void* key) {
         break;
       result=tree->lower_than(key,aux->pair->key);
       menorkey=lower_than(aux->pair->key,menor);
-      if (result==1 && aux==0){
+      if (result==1 && auxint==0){
         menor=aux->pair->key;
-        aux=1;
+        auxint=1;
       }
       if (result==1 && menorkey==1){ 
         menor=aux->pair->key;
