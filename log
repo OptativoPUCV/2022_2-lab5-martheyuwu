@@ -1551,3 +1551,9 @@ treemap.c:175:9: error: ‘menorpair’ undeclared (first use in this function)
 treemap.c:175:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4ea9291
+Mon 26 Sep 2022 02:28:30 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  26|1
+total_score: 60/70
+9682d93
