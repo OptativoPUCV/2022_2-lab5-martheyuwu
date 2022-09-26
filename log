@@ -1711,3 +1711,8 @@ treemap.c:171:16: error: implicit declaration of function ‘lower_than’ [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 daadb63
+Mon 26 Sep 2022 03:02:50 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+2c92860
