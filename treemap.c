@@ -171,6 +171,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
       menorkey=tree->lower_than(aux->pair->key,menor);
       if (result==1 && auxint==0){
         menor=aux->pair->key;
+        menorpair=aux->pair;
         auxint=1;
       }
       if (result==1 && menorkey==1){ 
